@@ -1,0 +1,16 @@
+{
+  "name": "tp-dsw-back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p ./tsconfig.json",
+    "start:dev": "tsc-watch --noClear -p ./tsconfig.json --onSuccess \"node ./dist/index.js\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tsc-watch": "^6.0.4",
+    "typescript": "^5.4.5"
+  }
+}
