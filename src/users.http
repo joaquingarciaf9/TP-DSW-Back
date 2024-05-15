@@ -1,0 +1,16 @@
+### busca usuario por id
+
+GET http://localhost:3000/api/users/2cad7396-9358-45bf-abf5-ab49b3b126d2
+
+### crea un nuevo usuario
+
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+    "nombre": "bruno",
+    "apellido": "capiglioni",
+    "tel": "3415673929",
+    "email": "random1@gmail.com",
+    "direccion": "Laprida 928"
+}
