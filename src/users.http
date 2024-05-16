@@ -1,6 +1,6 @@
 ### busca usuario por id
 
-GET http://localhost:3000/api/users/2cad7396-9358-45bf-abf5-ab49b3b126d2
+GET http://localhost:3000/api/users/240dbf6a-a147-41c9-8ace-5fa47cbeba24
 
 ### crea un nuevo usuario
 
@@ -8,9 +8,22 @@ POST http://localhost:3000/api/users
 Content-Type: application/json
 
 {
-    "nombre": "bruno",
-    "apellido": "capiglioni",
+    "nombre": "Bruno",
+    "apellido": "Capiglioni",
     "tel": "3415673929",
     "email": "random1@gmail.com",
     "direccion": "Laprida 928"
+}
+
+### modificar un usuario ###
+
+PUT http://localhost:3000/api/users/240dbf6a-a147-41c9-8ace-5fa47cbeba24
+Content-Type: application/json
+
+{
+    "nombre": "Lionel",
+    "apellido": "Messi",
+    "tel": "341845673",
+    "email": "lio@gmail.com",
+    "direccion": "Ayacucho 2567"
 }
