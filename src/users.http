@@ -1,6 +1,9 @@
 ### busca usuario por id
 
-GET http://localhost:3000/api/users/240dbf6a-a147-41c9-8ace-5fa47cbeba24
+GET http://localhost:3000/api/users
+
+### obtener un usauario
+GET http://localhost:3000/api/users/a02b91bc-3769-4221-beb1-d7a3aeba7dad
 
 ### crea un nuevo usuario
 
@@ -17,7 +20,7 @@ Content-Type: application/json
 
 ### modificar un usuario ###
 
-PUT http://localhost:3000/api/users/240dbf6a-a147-41c9-8ace-5fa47cbeba24
+PUT http://localhost:3000/api/users/a02b91bc-3769-4221-beb1-d7a3aeba7dad
 Content-Type: application/json
 
 {
@@ -27,3 +30,16 @@ Content-Type: application/json
     "email": "lio@gmail.com",
     "direccion": "Ayacucho 2567"
 }
+### modificar un usuario PATCH ###
+
+PATCH http://localhost:3000/api/users/a02b91bc-3769-4221-beb1-d7a3aeba7dad
+Content-Type: application/json
+
+{
+    "nombre": "Andres",
+    "apellido": "Messi",
+    "tel": "341845888",
+}
+
+### eliminar un usuario
+DELETE http://localhost:3000/api/users/a02b91bc-3769-4221-beb1-d7a3aeba7dad
