@@ -38,7 +38,7 @@ Content-Type: application/json
 {
     "nombre": "Andres",
     "apellido": "Messi",
-    "tel": "341845888",
+    "tel": "341845888"
 }
 
 ### eliminar un usuario
